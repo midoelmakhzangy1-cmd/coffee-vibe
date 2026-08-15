@@ -13,11 +13,38 @@
         .chef-img { width: 90px; height: 90px; border-radius: 50%; border: 3px solid white; object-fit: cover; box-shadow: 0 4px 10px rgba(0,0,0,0.2); }
         .category-title { color: #8b5a2b; margin-top: 35px; font-size: 22px; border-bottom: 2px solid #d4af37; display: inline-block; padding-bottom: 5px; font-weight: bold; }
         .menu { display: flex; flex-wrap: wrap; justify-content: center; gap: 20px; padding: 20px; }
-        .card { background: #ffffff; border: 2px solid #e6d5b8; border-radius: 15px; width: 230px; padding: 15px; box-shadow: 0 6px 15px rgba(0,0,0,0.08); transition: transform 0.2s; }
+        
+        /* تعديل الكارت عشان يشيل صورة في الخلفية وتبقى واضحة وشيك */
+        .card { 
+            position: relative;
+            background-size: cover;
+            background-position: center;
+            border: 2px solid #e6d5b8; 
+            border-radius: 15px; 
+            width: 230px; 
+            padding: 15px; 
+            box-shadow: 0 6px 15px rgba(0,0,0,0.15); 
+            transition: transform 0.2s; 
+            overflow: hidden;
+        }
         .card:hover { transform: translateY(-5px); }
-        .card img { width: 100%; height: 130px; border-radius: 10px; object-fit: cover; margin-bottom: 10px; }
+        
+        /* طبقة شفافة فوق خلفية الكارت عشان الكلام يبقى واضح */
+        .card::before {
+            content: '';
+            position: absolute;
+            top: 0; left: 0; right: 0; bottom: 0;
+            background: rgba(255, 255, 255, 0.92);
+            z-index: 1;
+        }
+        
+        .card > * {
+            position: relative;
+            z-index: 2;
+        }
+
         .card h3 { color: #8b5a2b; margin: 8px 0; font-size: 18px; }
-        .card p { color: #666; font-size: 12px; margin-bottom: 10px; }
+        .card p { color: #555; font-size: 12px; margin-bottom: 10px; font-weight: bold; }
         .price { color: #2e7d32; font-weight: bold; font-size: 16px; }
     </style>
 </head>
@@ -32,44 +59,43 @@
         </div>
     </header>
 
-    <div class="category-title">🍟 الوجبات السريعة والبطاطس</div>
+    <div class="category-title">🍟 الوجبات السريعة والبطاطس والفراخ</div>
     <div class="menu">
-        <div class="card">
-            <img src="https://images.unsplash.com/photo-1573080496219-bb080dd4f877" alt="بطاطس محمرة">
+        <div class="card" style="background-image: url('https://images.unsplash.com/photo-1626082927389-6cd097cdc6ec');">
             <h3>بطاطس مقرمشة</h3>
-            <p>بطاطس ذهبية مقرمشة مع التوابل الخاصة</p>
+            <p>بطاطس ذهبية مع التوابل الخاصة</p>
             <div class="price">35 ج.م</div>
         </div>
-        <div class="card">
-            <img src="https://images.unsplash.com/photo-1626082927389-6cd097cdc6ec" alt="تشيكن كرسبي">
+        <div class="card" style="background-image: url('https://images.unsplash.com/photo-1626082927389-6cd097cdc6ec');">
             <h3>تشيكن كرسبي</h3>
             <p>سندوتش فراخ مقرمشة مع صوص السبايسي</p>
             <div class="price">110 ج.م</div>
+        </div>
+        <div class="card" style="background-image: url('https://images.unsplash.com/photo-1527477396000-e27163b481c2');">
+            <h3>شاورما فراخ</h3>
+            <p>فتة أو سندوتش شاورما فراخ سوري خطير</p>
+            <div class="price">95 ج.م</div>
         </div>
     </div>
 
     <div class="category-title">☕ القهوة والمشروبات الساخنة</div>
     <div class="menu">
-        <div class="card">
-            <img src="https://images.unsplash.com/photo-1541167760496-1628856ab772" alt="قهوة تركي">
+        <div class="card" style="background-image: url('https://images.unsplash.com/photo-1541167760496-1628856ab772');">
             <h3>قهوة تركي</h3>
             <p>مزرعة خاصة على الصاغ الساخن بوش فاخر</p>
             <div class="price">45 ج.م</div>
         </div>
-        <div class="card">
-            <img src="https://images.unsplash.com/photo-1514432324607-a09d9b4aefdd" alt="كافيمكس">
+        <div class="card" style="background-image: url('https://images.unsplash.com/photo-1514432324607-a09d9b4aefdd');">
             <h3>كافيمكس</h3>
             <p>مزيج القهوة الغني برغوة الكريمة الناعمة</p>
             <div class="price">55 ج.م</div>
         </div>
-        <div class="card">
-            <img src="https://images.unsplash.com/photo-1576092768241-dec231879fc3" alt="شاي أحمر/أخضر">
+        <div class="card" style="background-image: url('https://images.unsplash.com/photo-1576092768241-dec231879fc3');">
             <h3>شاي كلاسيك</h3>
-            <p>شاي مظبوط على الفحم أو الكاتل حسب طلبك</p>
+            <p>شاي مظبوط على الفحم أو الكاتل</p>
             <div class="price">25 ج.م</div>
         </div>
-        <div class="card">
-            <img src="https://images.unsplash.com/photo-1554473336-749e390c5c64" alt="إسبانيش لاتيه">
+        <div class="card" style="background-image: url('https://images.unsplash.com/photo-1554473336-749e390c5c64');">
             <h3>إسبانيش لاتيه</h3>
             <p>إسبريسو فاخر مع حليب مكثف ومثلج</p>
             <div class="price">85 ج.م</div>
@@ -78,23 +104,25 @@
 
     <div class="category-title">🍰 التحليات والحلويات الإضافية</div>
     <div class="menu">
-        <div class="card">
-            <img src="https://images.unsplash.com/photo-1533134242443-d4fd215305ad" alt="تشيز كيك">
+        <div class="card" style="background-image: url('https://images.unsplash.com/photo-1533134242443-d4fd215305ad');">
             <h3>تشيز كيك</h3>
             <p>تشيز كيك غني بصوص التوت الفاخر</p>
             <div class="price">90 ج.م</div>
         </div>
-        <div class="card">
-            <img src="https://images.unsplash.com/photo-1606313564200-e75d5e30476c" alt="مولتن كيك">
+        <div class="card" style="background-image: url('https://images.unsplash.com/photo-1606313564200-e75d5e30476c');">
             <h3>مولتن كيك</h3>
-            <p>كيك الشوكولاتة الدافئ مع صوص الشوكولاتة السائلة</p>
+            <p>كيك الشوكولاتة الدافئ مع صوص الشوكولاتة</p>
             <div class="price">95 ج.م</div>
         </div>
-        <div class="card">
-            <img src="https://images.unsplash.com/photo-1587314168485-3236d6710814" alt="وافل شوكولاتة">
+        <div class="card" style="background-image: url('https://images.unsplash.com/photo-1587314168485-3236d6710814');">
             <h3>وافل شوكولاتة</h3>
             <p>وافل مقرمش مغطى بنوتيلا وقطع الفواكه</p>
             <div class="price">85 ج.م</div>
+        </div>
+        <div class="card" style="background-image: url('https://images.unsplash.com/photo-1565299585323-38d6b0865b47');">
+            <h3>بان كيك شوكو</h3>
+            <p>بان كيك طري مع العسل والشوكولاتة السائلة</p>
+            <div class="price">75 ج.م</div>
         </div>
     </div>
 </body>
