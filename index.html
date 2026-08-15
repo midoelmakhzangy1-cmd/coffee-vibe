@@ -3,41 +3,48 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Coffee Vibe | Menu & Food</title>
+    <title>Coffee Vibe | Specialty Coffee & Food</title>
     <style>
         body { font-family: Tahoma, sans-serif; background-color: #fffaf0; color: #333; margin: 0; padding: 0; text-align: center; }
-        header { background: #d4af37; padding: 35px; border-bottom: 3px solid #b89728; color: white; }
-        h1 { margin: 0; font-size: 30px; }
-        p { color: #555; font-size: 15px; margin-top: 5px; }
-        .category-title { color: #8b5a2b; margin-top: 40px; font-size: 22px; border-bottom: 2px solid #d4af37; display: inline-block; padding-bottom: 5px; font-weight: bold; }
-        .menu { display: flex; flex-wrap: wrap; justify-content: center; gap: 25px; padding: 20px; }
-        .card { background: #ffffff; border: 2px solid #e6d5b8; border-radius: 15px; width: 240px; padding: 15px; box-shadow: 0 6px 15px rgba(0,0,0,0.08); transition: transform 0.2s; }
+        header { background: #d4af37; padding: 30px; border-bottom: 3px solid #b89728; color: white; display: flex; align-items: center; justify-content: space-around; flex-wrap: wrap; }
+        .header-text { max-width: 500px; text-align: right; }
+        h1 { margin: 0; font-size: 28px; }
+        p { color: #fff; font-size: 14px; margin-top: 5px; }
+        .chef-img { width: 90px; height: 90px; border-radius: 50%; border: 3px solid white; object-fit: cover; box-shadow: 0 4px 10px rgba(0,0,0,0.2); }
+        .category-title { color: #8b5a2b; margin-top: 35px; font-size: 22px; border-bottom: 2px solid #d4af37; display: inline-block; padding-bottom: 5px; font-weight: bold; }
+        .menu { display: flex; flex-wrap: wrap; justify-content: center; gap: 20px; padding: 20px; }
+        .card { background: #ffffff; border: 2px solid #e6d5b8; border-radius: 15px; width: 230px; padding: 15px; box-shadow: 0 6px 15px rgba(0,0,0,0.08); transition: transform 0.2s; }
         .card:hover { transform: translateY(-5px); }
-        .card img { width: 100%; height: 140px; border-radius: 10px; object-fit: cover; margin-bottom: 10px; }
+        .card img { width: 100%; height: 130px; border-radius: 10px; object-fit: cover; margin-bottom: 10px; }
         .card h3 { color: #8b5a2b; margin: 8px 0; font-size: 18px; }
-        .card p { color: #666; font-size: 12px; margin-bottom: 12px; }
+        .card p { color: #666; font-size: 12px; margin-bottom: 10px; }
         .price { color: #2e7d32; font-weight: bold; font-size: 16px; }
     </style>
 </head>
 <body>
     <header>
-        <h1>☕ Coffee Vibe & Food</h1>
-        <p>عالم القهوة المختصة، الوجبات الشهية، والتحليات الفاخرة</p>
+        <div class="header-text">
+            <h1>☕ Coffee Vibe & Food</h1>
+            <p>أجود المشروبات، الوجبات السريعة، والحلويات الفاخرة</p>
+        </div>
+        <div>
+            <img src="https://images.unsplash.com/photo-1577219491135-ce391730fb2c" alt="صورة الشيف" class="chef-img">
+        </div>
     </header>
 
-    <div class="category-title">🍗 الأكل والوجبات الساخنة (فراخ)</div>
+    <div class="category-title">🍟 الوجبات السريعة والبطاطس</div>
     <div class="menu">
         <div class="card">
-            <img src="https://images.unsplash.com/photo-1626082927389-6cd097cdc6ec" alt="تشيكن رول">
-            <h3>تشيكن كرسبي</h3>
-            <p>سندوتش فراخ مقرمشة مع صوص السبايسي الخاص</p>
-            <div class="price">110 ج.م</div>
+            <img src="https://images.unsplash.com/photo-1573080496219-bb080dd4f877" alt="بطاطس محمرة">
+            <h3>بطاطس مقرمشة</h3>
+            <p>بطاطس ذهبية مقرمشة مع التوابل الخاصة</p>
+            <div class="price">35 ج.م</div>
         </div>
         <div class="card">
-            <img src="https://images.unsplash.com/photo-1527477396000-e27163b481c2" alt="وجبة فراخ">
-            <h3>وجبة تشيكن جريل</h3>
-            <p>صدور فراخ مشوية على الفحم مع البطاطس</p>
-            <div class="price">150 ج.م</div>
+            <img src="https://images.unsplash.com/photo-1626082927389-6cd097cdc6ec" alt="تشيكن كرسبي">
+            <h3>تشيكن كرسبي</h3>
+            <p>سندوتش فراخ مقرمشة مع صوص السبايسي</p>
+            <div class="price">110 ج.م</div>
         </div>
     </div>
 
@@ -50,6 +57,18 @@
             <div class="price">45 ج.م</div>
         </div>
         <div class="card">
+            <img src="https://images.unsplash.com/photo-1514432324607-a09d9b4aefdd" alt="كافيمكس">
+            <h3>كافيمكس</h3>
+            <p>مزيج القهوة الغني برغوة الكريمة الناعمة</p>
+            <div class="price">55 ج.م</div>
+        </div>
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1576092768241-dec231879fc3" alt="شاي أحمر/أخضر">
+            <h3>شاي كلاسيك</h3>
+            <p>شاي مظبوط على الفحم أو الكاتل حسب طلبك</p>
+            <div class="price">25 ج.م</div>
+        </div>
+        <div class="card">
             <img src="https://images.unsplash.com/photo-1554473336-749e390c5c64" alt="إسبانيش لاتيه">
             <h3>إسبانيش لاتيه</h3>
             <p>إسبريسو فاخر مع حليب مكثف ومثلج</p>
@@ -57,13 +76,25 @@
         </div>
     </div>
 
-    <div class="category-title">🍰 التحليات والحلويات</div>
+    <div class="category-title">🍰 التحليات والحلويات الإضافية</div>
     <div class="menu">
         <div class="card">
             <img src="https://images.unsplash.com/photo-1533134242443-d4fd215305ad" alt="تشيز كيك">
             <h3>تشيز كيك</h3>
             <p>تشيز كيك غني بصوص التوت الفاخر</p>
             <div class="price">90 ج.م</div>
+        </div>
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1606313564200-e75d5e30476c" alt="مولتن كيك">
+            <h3>مولتن كيك</h3>
+            <p>كيك الشوكولاتة الدافئ مع صوص الشوكولاتة السائلة</p>
+            <div class="price">95 ج.م</div>
+        </div>
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1587314168485-3236d6710814" alt="وافل شوكولاتة">
+            <h3>وافل شوكولاتة</h3>
+            <p>وافل مقرمش مغطى بنوتيلا وقطع الفواكه</p>
+            <div class="price">85 ج.م</div>
         </div>
     </div>
 </body>
