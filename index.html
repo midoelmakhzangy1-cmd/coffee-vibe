@@ -1,403 +1,46 @@
 <!DOCTYPE html>
-<html lang="en" class="scroll-smooth">
+<html lang="ar" dir="rtl">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-  <title>Coffee Vibe | Specialty Coffee Shop</title>
-  <meta
-    name="description"
-    content="Discover authentic specialty coffee, freshly brewed tea, and refreshing cold drinks at Coffee Vibe."
-  >
-
-  <!-- Tailwind CSS via CDN -->
-  <script src="https://cdn.tailwindcss.com"></script>
-
-  <script>
-    tailwind.config = {
-      theme: {
-        extend: {
-          colors: {
-            coffee: {
-              50: "#faf7f2",
-              100: "#f2e9dc",
-              200: "#e4cfb2",
-              300: "#d3ae80",
-              400: "#c18b52",
-              500: "#a86d38",
-              600: "#88512b",
-              700: "#6c3e26",
-              800: "#4b2e24",
-              900: "#2f1b15"
-            },
-            gold: "#d6a756"
-          },
-          fontFamily: {
-            display: ["Georgia", "serif"],
-            body: ["Inter", "ui-sans-serif", "system-ui", "sans-serif"]
-          },
-          boxShadow: {
-            card: "0 16px 40px rgba(47, 27, 21, 0.10)"
-          }
-        }
-      }
-    };
-  </script>
-
-  <style>
-    body {
-      background-color: #faf7f2;
-    }
-
-    .hero-overlay {
-      background:
-        linear-gradient(
-          90deg,
-          rgba(29, 16, 12, 0.92) 0%,
-          rgba(47, 27, 21, 0.72) 48%,
-          rgba(47, 27, 21, 0.30) 100%
-        );
-    }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coffee Vibe | Specialty Coffee</title>
+    <style>
+        body { font-family: Tahoma, sans-serif; background-color: #121212; color: #fff; margin: 0; padding: 0; text-align: center; }
+        header { background: #1f1f1f; padding: 20px; border-bottom: 2px solid #d4af37; }
+        h1 { color: #d4af37; margin: 0; }
+        .menu { display: flex; flex-wrap: wrap; justify-content: center; gap: 20px; padding: 30px; }
+        .card { background: #1e1e1e; border: 1px solid #333; border-radius: 10px; width: 250px; padding: 15px; box-shadow: 0 4px 8px rgba(0,0,0,0.3); }
+        .card h3 { color: #d4af37; margin-bottom: 10px; }
+        .card p { color: #bbb; font-size: 14px; }
+        .price { color: #4CAF50; font-weight: bold; font-size: 16px; margin-top: 10px; }
+    </style>
 </head>
-
-<body class="font-body text-coffee-900 antialiased">
-  <!-- Navbar -->
-  <header class="fixed inset-x-0 top-0 z-50 border-b border-white/10 bg-coffee-900/95 backdrop-blur-md">
-    <nav
-      class="mx-auto flex max-w-7xl items-center justify-between px-5 py-4 sm:px-8 lg:px-12"
-      aria-label="Main navigation"
-    >
-      <a
-        href="#home"
-        class="font-display text-2xl font-bold tracking-wide text-white transition hover:text-gold"
-      >
-        Coffee <span class="text-gold">Vibe</span>
-      </a>
-
-      <div class="flex items-center gap-6 sm:gap-10">
-        <a
-          href="#menu"
-          class="text-sm font-semibold text-coffee-100 transition hover:text-gold"
-        >
-          Menu
-        </a>
-        <a
-          href="#location"
-          class="text-sm font-semibold text-coffee-100 transition hover:text-gold"
-        >
-          Location
-        </a>
-      </div>
-    </nav>
-  </header>
-
-  <main>
-    <!-- Hero Section -->
-    <section
-      id="home"
-      class="relative flex min-h-screen items-center bg-cover bg-center"
-      style="background-image: url('https://images.unsplash.com/photo-1445116572660-236099ec97a0?auto=format&fit=crop&w=2000&q=85');"
-    >
-      <div class="hero-overlay absolute inset-0"></div>
-
-      <div class="relative z-10 mx-auto w-full max-w-7xl px-5 pt-20 sm:px-8 lg:px-12">
-        <div class="max-w-3xl">
-          <p class="mb-5 text-sm font-bold uppercase tracking-[0.3em] text-gold">
-            Crafted with passion
-          </p>
-
-          <h1 class="font-display text-5xl font-bold leading-tight text-white sm:text-6xl lg:text-7xl">
-            Awaken Your Senses
-          </h1>
-
-          <p class="mt-6 max-w-2xl text-lg leading-8 text-coffee-100 sm:text-xl">
-            Experience carefully selected beans, traditional brewing, and a warm
-            atmosphere created for memorable coffee moments.
-          </p>
-
-          <a
-            href="#menu"
-            class="mt-10 inline-flex items-center justify-center rounded-full bg-gold px-8 py-4 text-sm font-bold uppercase tracking-wider text-coffee-900 shadow-lg transition hover:-translate-y-1 hover:bg-coffee-200 focus:outline-none focus:ring-4 focus:ring-gold/40"
-          >
-            View Menu
-            <svg
-              class="ml-2 h-5 w-5"
-              viewBox="0 0 24 24"
-              fill="none"
-              stroke="currentColor"
-              stroke-width="2"
-              aria-hidden="true"
-            >
-              <path stroke-linecap="round" stroke-linejoin="round" d="M5 12h14m-6-6 6 6-6 6"/>
-            </svg>
-          </a>
+<body>
+    <header>
+        <h1>Coffee Vibe ☕</h1>
+        <p>عالم القهوة المختصة والتحليات المميزة</p>
+    </header>
+    <div class="menu">
+        <div class="card">
+            <h3>قهوة تركي</h3>
+            <p>مزرعة خاصة على الصاغ الساخن</p>
+            <div class="price">45 ج.م</div>
         </div>
-      </div>
-    </section>
-
-    <!-- Menu Section -->
-    <section id="menu" class="px-5 py-20 sm:px-8 sm:py-28 lg:px-12">
-      <div class="mx-auto max-w-7xl">
-        <div class="mx-auto mb-14 max-w-2xl text-center">
-          <p class="text-sm font-bold uppercase tracking-[0.3em] text-coffee-500">
-            Our favorites
-          </p>
-          <h2 class="mt-3 font-display text-4xl font-bold text-coffee-900 sm:text-5xl">
-            Featured Menu
-          </h2>
-          <p class="mt-5 leading-7 text-coffee-700">
-            From rich traditional coffee to refreshing chilled drinks, every
-            cup is prepared with care.
-          </p>
+        <div class="card">
+            <h3>إسبانيش لاتيه</h3>
+            <p>إسبريسو فاخر مع حليب مكثف ومثلج</p>
+            <div class="price">85 ج.م</div>
         </div>
-
-        <div class="grid grid-cols-1 gap-8 lg:grid-cols-3">
-          <!-- Coffee Card -->
-          <article class="overflow-hidden rounded-3xl bg-white shadow-card transition duration-300 hover:-translate-y-2">
-            <div class="h-56 overflow-hidden">
-              <img
-                src="https://images.unsplash.com/photo-1512568400610-62da28bc8a13?auto=format&fit=crop&w=900&q=80"
-                alt="Freshly prepared specialty coffee"
-                class="h-full w-full object-cover transition duration-500 hover:scale-105"
-                loading="lazy"
-              >
-            </div>
-
-            <div class="p-7">
-              <div class="mb-6 flex items-center justify-between">
-                <h3 class="font-display text-3xl font-bold">Coffee</h3>
-                <span class="rounded-full bg-coffee-100 px-3 py-1 text-xs font-bold uppercase tracking-wider text-coffee-700">
-                  Signature
-                </span>
-              </div>
-
-              <div class="divide-y divide-coffee-100">
-                <div class="py-5 first:pt-0">
-                  <div class="flex items-start justify-between gap-4">
-                    <h4 class="font-bold text-coffee-900">Authentic Turkish Coffee</h4>
-                    <span class="whitespace-nowrap font-bold text-coffee-600">$4.50</span>
-                  </div>
-                  <p class="mt-2 text-sm leading-6 text-coffee-700">
-                    Finely ground coffee brewed traditionally for a deep, aromatic flavor.
-                  </p>
-                </div>
-
-                <div class="py-5 last:pb-0">
-                  <div class="flex items-start justify-between gap-4">
-                    <h4 class="font-bold text-coffee-900">Classic Espresso</h4>
-                    <span class="whitespace-nowrap font-bold text-coffee-600">$3.50</span>
-                  </div>
-                  <p class="mt-2 text-sm leading-6 text-coffee-700">
-                    A concentrated shot with a rich crema and a smooth, balanced finish.
-                  </p>
-                </div>
-              </div>
-            </div>
-          </article>
-
-          <!-- Tea Card -->
-          <article class="overflow-hidden rounded-3xl bg-white shadow-card transition duration-300 hover:-translate-y-2">
-            <div class="h-56 overflow-hidden">
-              <img
-                src="https://images.unsplash.com/photo-1594631252845-29fc4cc8cde9?auto=format&fit=crop&w=900&q=80"
-                alt="A warm cup of freshly brewed tea"
-                class="h-full w-full object-cover transition duration-500 hover:scale-105"
-                loading="lazy"
-              >
-            </div>
-
-            <div class="p-7">
-              <div class="mb-6 flex items-center justify-between">
-                <h3 class="font-display text-3xl font-bold">Tea</h3>
-                <span class="rounded-full bg-coffee-100 px-3 py-1 text-xs font-bold uppercase tracking-wider text-coffee-700">
-                  Fresh
-                </span>
-              </div>
-
-              <div class="divide-y divide-coffee-100">
-                <div class="py-5 first:pt-0">
-                  <div class="flex items-start justify-between gap-4">
-                    <h4 class="font-bold text-coffee-900">Fresh Mint Tea</h4>
-                    <span class="whitespace-nowrap font-bold text-coffee-600">$3.75</span>
-                  </div>
-                  <p class="mt-2 text-sm leading-6 text-coffee-700">
-                    Fragrant tea infused with fresh mint leaves for a soothing finish.
-                  </p>
-                </div>
-
-                <div class="py-5 last:pb-0">
-                  <div class="flex items-start justify-between gap-4">
-                    <h4 class="font-bold text-coffee-900">English Breakfast</h4>
-                    <span class="whitespace-nowrap font-bold text-coffee-600">$3.25</span>
-                  </div>
-                  <p class="mt-2 text-sm leading-6 text-coffee-700">
-                    A full-bodied black tea blend, delicious alone or with a splash of milk.
-                  </p>
-                </div>
-              </div>
-            </div>
-          </article>
-
-          <!-- Cold Drinks Card -->
-          <article class="overflow-hidden rounded-3xl bg-white shadow-card transition duration-300 hover:-translate-y-2">
-            <div class="h-56 overflow-hidden">
-              <img
-                src="https://images.unsplash.com/photo-1461023058943-07fcbe16d735?auto=format&fit=crop&w=900&q=80"
-                alt="Refreshing iced coffee"
-                class="h-full w-full object-cover transition duration-500 hover:scale-105"
-                loading="lazy"
-              >
-            </div>
-
-            <div class="p-7">
-              <div class="mb-6 flex items-center justify-between">
-                <h3 class="font-display text-3xl font-bold">Cold Drinks</h3>
-                <span class="rounded-full bg-coffee-100 px-3 py-1 text-xs font-bold uppercase tracking-wider text-coffee-700">
-                  Chilled
-                </span>
-              </div>
-
-              <div class="divide-y divide-coffee-100">
-                <div class="py-5 first:pt-0">
-                  <div class="flex items-start justify-between gap-4">
-                    <h4 class="font-bold text-coffee-900">Refreshing Iced Americano</h4>
-                    <span class="whitespace-nowrap font-bold text-coffee-600">$4.25</span>
-                  </div>
-                  <p class="mt-2 text-sm leading-6 text-coffee-700">
-                    Bold espresso poured over chilled water and ice for a crisp refreshment.
-                  </p>
-                </div>
-
-                <div class="py-5 last:pb-0">
-                  <div class="flex items-start justify-between gap-4">
-                    <h4 class="font-bold text-coffee-900">Iced Latte</h4>
-                    <span class="whitespace-nowrap font-bold text-coffee-600">$4.95</span>
-                  </div>
-                  <p class="mt-2 text-sm leading-6 text-coffee-700">
-                    Smooth espresso combined with cold milk and ice for a creamy classic.
-                  </p>
-                </div>
-              </div>
-            </div>
-          </article>
+        <div class="card">
+            <h3>آيس أمريكانو</h3>
+            <p>انتعاش الصيف بمذاق الإسبريسو الخالص</p>
+            <div class="price">65 ج.م</div>
         </div>
-      </div>
-    </section>
-
-    <!-- Location Section -->
-    <section id="location" class="bg-coffee-900 px-5 py-20 text-white sm:px-8 sm:py-24 lg:px-12">
-      <div class="mx-auto grid max-w-7xl gap-12 lg:grid-cols-2 lg:items-center">
-        <div>
-          <p class="text-sm font-bold uppercase tracking-[0.3em] text-gold">
-            Come say hello
-          </p>
-          <h2 class="mt-3 font-display text-4xl font-bold sm:text-5xl">
-            Find Your Coffee Vibe
-          </h2>
-          <p class="mt-5 max-w-xl leading-7 text-coffee-200">
-            Whether you are meeting friends, working on your next idea, or simply
-            enjoying a quiet cup, there is always a seat waiting for you.
-          </p>
+        <div class="card">
+            <h3>تشيز كيك</h3>
+            <p>تشيز كيك غني بصوص التوت الفاخر</p>
+            <div class="price">90 ج.م</div>
         </div>
-
-        <div class="grid gap-6 sm:grid-cols-2">
-          <div class="rounded-3xl border border-coffee-700 bg-coffee-800 p-7">
-            <svg
-              class="mb-5 h-8 w-8 text-gold"
-              viewBox="0 0 24 24"
-              fill="none"
-              stroke="currentColor"
-              stroke-width="1.8"
-              aria-hidden="true"
-            >
-              <path stroke-linecap="round" stroke-linejoin="round" d="M12 21s7-5.2 7-12a7 7 0 1 0-14 0c0 6.8 7 12 7 12Z"/>
-              <circle cx="12" cy="9" r="2.5"/>
-            </svg>
-            <h3 class="font-display text-2xl font-bold">Location</h3>
-            <address class="mt-3 not-italic leading-7 text-coffee-200">
-              123 Brew Street<br>
-              Downtown, Coffee City<br>
-              CC 10001
-            </address>
-          </div>
-
-          <div class="rounded-3xl border border-coffee-700 bg-coffee-800 p-7">
-            <svg
-              class="mb-5 h-8 w-8 text-gold"
-              viewBox="0 0 24 24"
-              fill="none"
-              stroke="currentColor"
-              stroke-width="1.8"
-              aria-hidden="true"
-            >
-              <circle cx="12" cy="12" r="9"/>
-              <path stroke-linecap="round" stroke-linejoin="round" d="M12 7v5l3.5 2"/>
-            </svg>
-            <h3 class="font-display text-2xl font-bold">Opening Hours</h3>
-            <div class="mt-3 space-y-2 text-coffee-200">
-              <p class="flex justify-between gap-4">
-                <span>Mon–Fri</span>
-                <span>7 AM–9 PM</span>
-              </p>
-              <p class="flex justify-between gap-4">
-                <span>Saturday</span>
-                <span>8 AM–10 PM</span>
-              </p>
-              <p class="flex justify-between gap-4">
-                <span>Sunday</span>
-                <span>8 AM–8 PM</span>
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-  </main>
-
-  <!-- Footer -->
-  <footer class="border-t border-coffee-700 bg-coffee-900 px-5 py-8 text-coffee-300 sm:px-8 lg:px-12">
-    <div class="mx-auto flex max-w-7xl flex-col items-center justify-between gap-6 text-center sm:flex-row sm:text-left">
-      <p class="text-sm">
-        &copy; <span id="year"></span> Coffee Vibe. All rights reserved.
-      </p>
-
-      <div class="flex items-center gap-3">
-        <a
-          href="#"
-          aria-label="Instagram"
-          class="rounded-full border border-coffee-700 p-2.5 transition hover:border-gold hover:bg-gold hover:text-coffee-900"
-        >
-          <svg class="h-5 w-5" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
-            <path d="M7.8 2h8.4A5.8 5.8 0 0 1 22 7.8v8.4a5.8 5.8 0 0 1-5.8 5.8H7.8A5.8 5.8 0 0 1 2 16.2V7.8A5.8 5.8 0 0 1 7.8 2Zm-.2 2A3.6 3.6 0 0 0 4 7.6v8.8A3.6 3.6 0 0 0 7.6 20h8.8a3.6 3.6 0 0 0 3.6-3.6V7.6A3.6 3.6 0 0 0 16.4 4H7.6Zm9.65 1.5a1.25 1.25 0 1 1 0 2.5 1.25 1.25 0 0 1 0-2.5ZM12 7a5 5 0 1 1 0 10 5 5 0 0 1 0-10Zm0 2a3 3 0 1 0 0 6 3 3 0 0 0 0-6Z"/>
-          </svg>
-        </a>
-
-        <a
-          href="#"
-          aria-label="Facebook"
-          class="rounded-full border border-coffee-700 p-2.5 transition hover:border-gold hover:bg-gold hover:text-coffee-900"
-        >
-          <svg class="h-5 w-5" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
-            <path d="M13.5 22v-9h3l.45-3.5H13.5V7.25c0-1.01.28-1.7 1.73-1.7H17V2.42A24 24 0 0 0 14.42 2C11.86 2 10.1 3.56 10.1 6.43V9.5H7V13h3.1v9h3.4Z"/>
-          </svg>
-        </a>
-
-        <a
-          href="#"
-          aria-label="X"
-          class="rounded-full border border-coffee-700 p-2.5 transition hover:border-gold hover:bg-gold hover:text-coffee-900"
-        >
-          <svg class="h-5 w-5" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
-            <path d="M18.9 2H22l-6.77 7.74L23.2 22h-6.24l-4.89-6.39L6.48 22H3.36l7.26-8.3L2.98 2h6.4l4.42 5.84L18.9 2Zm-1.1 17.84h1.72L8.44 4.05H6.59L17.8 19.84Z"/>
-          </svg>
-        </a>
-      </div>
     </div>
-  </footer>
-
-  <script>
-    document.getElementById("year").textContent = new Date().getFullYear();
-  </script>
 </body>
 </html>
