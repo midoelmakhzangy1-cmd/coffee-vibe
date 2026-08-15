@@ -2,25 +2,72 @@
 <html lang="ar" dir="rtl">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Coffee Vibe | Specialty Coffee</title>
     <style>
-        body { font-family: sans-serif; background-color: #fdfaf6; color: #333; text-align: center; margin: 0; }
-        header { background: #d4af37; padding: 30px; color: white; }
+        body { font-family: Tahoma, sans-serif; background-color: #121212; color: #fff; margin: 0; padding: 0; text-align: center; }
+        header { background: #1f1f1f; padding: 25px; border-bottom: 2px solid #d4af37; }
+        h1 { color: #d4af37; margin: 0; font-size: 28px; }
+        p { color: #aaa; }
+        .category-title { color: #d4af37; margin-top: 30px; font-size: 22px; border-bottom: 1px solid #333; display: inline-block; padding-bottom: 5px; }
         .menu { display: flex; flex-wrap: wrap; justify-content: center; gap: 20px; padding: 20px; }
-        .card { background: white; border: 1px solid #ddd; border-radius: 15px; width: 220px; padding: 20px; box-shadow: 0 4px 6px rgba(0,0,0,0.1); }
-        h3 { color: #d4af37; }
-        .price { color: #2e7d32; font-weight: bold; }
+        .card { background: #1e1e1e; border: 1px solid #333; border-radius: 12px; width: 240px; padding: 15px; box-shadow: 0 4px 10px rgba(0,0,0,0.4); }
+        .card h3 { color: #d4af37; margin-bottom: 8px; font-size: 18px; }
+        .card p { color: #bbb; font-size: 13px; margin-bottom: 12px; }
+        .price { color: #4CAF50; font-weight: bold; font-size: 16px; }
     </style>
 </head>
 <body>
     <header>
         <h1>Coffee Vibe ☕</h1>
-        <p>قهوة مختصة وتحليات بسعادة</p>
+        <p>عالم القهوة المختصة، المشروبات المنعشة، والتحليات الفاخرة</p>
     </header>
+
+    <div class="category-title">☕ القهوة والمشروبات الساخنة</div>
     <div class="menu">
-        <div class="card"><h3>قهوة تركي</h3><p>مظبوطة</p><div class="price">45 ج.م</div></div>
-        <div class="card"><h3>إسبانيش لاتيه</h3><p>منعش</p><div class="price">85 ج.م</div></div>
-        <div class="card"><h3>تشيز كيك</h3><p>صوص التوت</p><div class="price">90 ج.م</div></div>
+        <div class="card">
+            <h3>قهوة تركي</h3>
+            <p>مزرعة خاصة على الصاغ الساخن بوش فاخر</p>
+            <div class="price">45 ج.م</div>
+        </div>
+        <div class="card">
+            <h3>إسبانيش لاتيه</h3>
+            <p>إسبريسو فاخر مع حليب مكثف ومثلج</p>
+            <div class="price">85 ج.م</div>
+        </div>
+        <div class="card">
+            <h3>كابتشينو</h3>
+            <p>إسبريسو مع حليب مبخر ورغوة غنية</p>
+            <div class="price">70 ج.م</div>
+        </div>
+    </div>
+
+    <div class="category-title">🧊 المشروبات الباردة</div>
+    <div class="menu">
+        <div class="card">
+            <h3>آيس أمريكانو</h3>
+            <p>انتعاش الصيف بمذاق الإسبريسو الخالص</p>
+            <div class="price">65 ج.م</div>
+        </div>
+        <div class="card">
+            <h3>أيس موكا</h3>
+            <p>مزيج ساحر من الإسبريسو والشوكولاتة</p>
+            <div class="price">90 ج.م</div>
+        </div>
+    </div>
+
+    <div class="category-title">🍰 التحليات والحلويات</div>
+    <div class="menu">
+        <div class="card">
+            <h3>تشيز كيك</h3>
+            <p>تشيز كيك غني بصوص التوت الفاخر</p>
+            <div class="price">90 ج.م</div>
+        </div>
+        <div class="card">
+            <h3>مولتن كيك</h3>
+            <p>كيك الشوكولاتة الدافئ مع صوص الشوكولاتة</p>
+            <div class="price">95 ج.م</div>
+        </div>
     </div>
 </body>
 </html>
