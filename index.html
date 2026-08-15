@@ -6,26 +6,11 @@
     <title>Coffee Vibe | Specialty Coffee & Food</title>
     <style>
         body { font-family: Tahoma, sans-serif; background-color: #fffaf0; color: #333; margin: 0; padding: 0; text-align: center; }
-        
-        /* الهيدر الجديد بخلفية الشيف */
-        header { 
-            position: relative; 
-            background: url('https://images.unsplash.com/photo-1556910103-1c02745aae4d') no-repeat center center; 
-            background-size: cover; 
-            padding: 80px 20px; 
-            color: white; 
-        }
-        /* طبقة غامقة فوق الصورة عشان الكلام يبان */
-        header::before {
-            content: '';
-            position: absolute;
-            top: 0; left: 0; right: 0; bottom: 0;
-            background: rgba(0, 0, 0, 0.6);
-        }
+        header { position: relative; background: url('https://images.unsplash.com/photo-1556910103-1c02745aae4d') no-repeat center center; background-size: cover; padding: 80px 20px; color: white; }
+        header::before { content: ''; position: absolute; top: 0; left: 0; right: 0; bottom: 0; background: rgba(0, 0, 0, 0.6); }
         .header-content { position: relative; z-index: 1; }
         h1 { margin: 0; font-size: 36px; color: #d4af37; }
         p { font-size: 18px; margin-top: 10px; text-shadow: 1px 1px 2px black; }
-
         .category-title { color: #8b5a2b; margin-top: 35px; font-size: 22px; border-bottom: 2px solid #d4af37; display: inline-block; padding-bottom: 5px; font-weight: bold; }
         .menu { display: flex; flex-wrap: wrap; justify-content: center; gap: 20px; padding: 20px; }
         .card { background: #ffffff; border: 2px solid #e6d5b8; border-radius: 15px; width: 230px; padding: 15px; box-shadow: 0 6px 15px rgba(0,0,0,0.08); transition: transform 0.2s; }
@@ -86,6 +71,12 @@
             <p>شاي مظبوط على الفحم أو الكاتل</p>
             <div class="price">25 ج.م</div>
         </div>
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1517701550927-30cf4ba1dba5" alt="لاتيه">
+            <h3>إسبانيش لاتيه</h3>
+            <p>إسبريسو فاخر مع حليب مكثف ومثلج</p>
+            <div class="price">85 ج.م</div>
+        </div>
     </div>
 
     <div class="category-title">🍰 التحليات والحلويات</div>
@@ -101,6 +92,18 @@
             <h3>مولتن كيك</h3>
             <p>كيك الشوكولاتة الدافئ مع صوص الشوكولاتة</p>
             <div class="price">95 ج.م</div>
+        </div>
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1587314168485-3236d6710814" alt="وافل">
+            <h3>وافل شوكولاتة</h3>
+            <p>وافل مقرمش مغطى بنوتيلا وقطع الفواكه</p>
+            <div class="price">85 ج.م</div>
+        </div>
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1565299585323-38d6b0865b47" alt="بان كيك">
+            <h3>بان كيك شوكو</h3>
+            <p>بان كيك طري مع العسل والشوكولاتة السائلة</p>
+            <div class="price">75 ج.م</div>
         </div>
     </div>
 </body>
